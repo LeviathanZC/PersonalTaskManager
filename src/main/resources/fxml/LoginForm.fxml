@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="640.0" style="-fx-background-color: #512DA8;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.zercompany.controllers.LoginController">
+   <children>
+      <Label id="logInPage" blendMode="ADD" layoutX="163.0" prefHeight="77.0" prefWidth="314.0" text="TASK MANAGER" textFill="#d1c4e9">
+         <font>
+            <Font name="Futura-Bold" size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane focusTraversable="true" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="640.0" style="-fx-background-color: #673AB7;">
+         <children>
+            <TextField fx:id="loginField" focusTraversable="false" layoutX="120.0" layoutY="55.0" onMouseClicked="#colorField" prefHeight="36.0" prefWidth="400.0" promptText="LOGIN" style="-fx-background-color: #673AB7; -fx-border-color: #512DA8; -fx-border-radius: 20; -fx-border-width: 3; -fx-text-fill: #d1c4e9;" styleClass="formLabel">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <PasswordField fx:id="pwField" focusTraversable="false" layoutX="120.0" layoutY="107.0" prefHeight="36.0" prefWidth="400.0" promptText="PASSWORD" style="-fx-background-color: #673AB7; -fx-border-color: #512DA8; -fx-border-radius: 20; -fx-border-width: 3; -fx-text-fill: #d1c4e9;" styleClass="formLabel">
+               <font>
+                  <Font size="18.0" />
+               </font></PasswordField>
+            <Button fx:id="loginButton" layoutX="120.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#loginAccount" prefHeight="36.0" prefWidth="400.0" style="-fx-background-color: #FF9800;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="261.0" layoutY="14.0" text="AUTHORIZATION" textFill="#d1c4e9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="120.0" layoutY="147.0" text="Forgot your password?" textFill="#ff9800" />
+            <Label layoutX="290.0" layoutY="255.0" text="Need an account?" textFill="#d1c4e9" />
+            <Hyperlink fx:id="openRegister" layoutX="408.0" layoutY="251.0" text="Register now!" textFill="#ff9800">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Hyperlink>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
